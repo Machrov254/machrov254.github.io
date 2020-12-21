@@ -1,0 +1,54 @@
+
+body, html {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Green-demo {
+    background: url(green.jpg);
+    background-color:green;
+    background-size: 1000px;
+    font-size: 30px;
+    height: 100vh;
+  }
+
+  .index-demo {
+    background: url(background1.jpg);
+    font-size: 40px;
+    font-style: initial;
+    height: 100vh;
+    font-display: swap;
+  }
+
+  .red-demo {
+    background: url(RED.jpg);
+    background-color:red;
+    font-size: 30px;
+    height: 100vh;
+  }
+  
+  .tag-demo {
+      font-style: italic;
+      font-style: bold;
+      text-decoration: line-through;
+  }
+
+  .custom-table {
+    border-collapse: collapse;
+    width: 300px;
+    te;
+  }
+  
+  .custom-table th {
+    border: 2px solid black;
+  }
+  
+  .table-foot tr > th {
+    color: black;
+  }
+
+  .italic-and-bold {
+    font-style: italic;
+    font-weight: bold;
+    font-stretch: wider;
+  }

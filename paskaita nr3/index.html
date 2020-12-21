@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <table class="test">
+        <tr>
+            <td>1</td>
+            <td class="hover" colspan="2">2</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hover" colspan="2">2</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hover" colspan="2">2</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="hover" colspan="2" rowspan="2">2x2</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+    <style>
+        .test,
+        .test th,
+        .test td {
+            border: 2px black solid;
+            border-radius: 25px;
+            border-collapse: collapse;
+            margin: 10px;
+            vertical-align: center;
+            text-align: left;
+            position: relative;
+            width: 230px;
+            height: 40px;
+        }
+
+        .test td:hover {
+            background-image: radial-gradient(circle, red, yellow, green);
+            border: solid;
+            border-style: dashed;
+            width: 900px;
+        }
+
+        .test tr:nth-child(even) {
+            background-image: linear-gradient(yellow, green);
+        }
+
+        .test td:hover::after {
+            content: "0";
+            position: absolute;
+            vertical-align: center;
+            width: 5%;
+            right: 5px;
+        }
+
+        td {
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #24e40a;
+        }
+    </style>
+    </body>
+
+</html>

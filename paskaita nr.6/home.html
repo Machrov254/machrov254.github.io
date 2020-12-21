@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media screen {
+      body {
+        background: white;
+        font-size: 28px;
+      }
+    }
+
+    @media print {
+      body {
+        font-size: 128px;
+      }
+    }
+
+    .container {
+      display: flex;
+      height: 400vh;
+      background-color: deepskyblue;
+      /* flex-wrap: wrap-reverse; */
+      justify-content: space-evenly;
+      /* flex-wrap: wrap; */
+      flex-direction: row;
+    }
+
+    .navigation {
+      background-color: azure;
+      max-width: 455px;
+      flex: 1;
+    }
+
+    .container2 {
+      display: flex;
+      height: 400vh;
+      background-color: deepskyblue;
+      /* flex-wrap: wrap-reverse; */
+      justify-content: space-evenly;
+      /* flex-wrap: wrap; */
+      flex-direction: row;
+    }
+
+    .navi-right {
+      background-color: rgb(192, 194, 194);
+      max-width: 1000px;
+      flex: 1;
+    }
+
+    .content {
+      background-color: aquamarine;
+      flex: 1;
+      flex-direction: column;
+      display: flex;
+    }
+
+    .feed {
+      background-color: rgb(107, 109, 108);
+      flex: 1;
+      flex-direction: column;
+      display: flex;
+    }
+
+    .navbar {
+      font-size: 25px;
+      position: sticky;
+      top: 0;
+      height: 64px;
+      background-color: rgb(205, 208, 214);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar>a {
+      width: 100%;
+      height: 100%;
+      background-color: rgb(120, 149, 156);
+      margin: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .navigation-links {
+      display: flex;
+      position: sticky;
+      flex-direction: column;
+      top: 65px;
+      background-color: rgb(253, 253, 253);
+    }
+
+    .navigation-links>a {
+      width: 100%;
+      margin: 12px 0;
+      text-align: center;
+      color: black;
+      height: 30px;
+    }
+
+    .navigation-links-down {
+      display: flex;
+      position: sticky;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 100vh;
+      width: 455px;
+      top: 65px;
+      background-color: cornsilk;
+    }
+
+    .navigation-links-down>a {
+      width: 100%;
+      margin: 20px 0px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .test {
+      height: 150px;
+    }
+
+    .test2 {
+      height: 0px;
+    }
+
+    div[id|=blogas] {
+      flex: 1;
+    }
+
+    #blogas-2 {
+      content: url(1.jpeg)center top fixed;
+      width: 100%;
+      display: flex;
+    }
+
+    #blogas-3 {
+      content: url(2.jpeg) center top fixed;
+      width: 100%;
+      display: flex;
+    }
+
+    #blogas-4 {
+      background-color: greenyellow;
+      display: flex;
+    }
+
+    #blogas-1 {
+      background-color: darkcyan;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: flex-start;
+      align-items: stretch;
+    }
+
+    .img-container {
+      min-width: 64px;
+      min-height: 64px;
+      margin: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: .8rem;
+    }
+
+
+    /* Extra small devices (phones, 600px and down) */
+    @media (orientation: landscape) and (max-width: 710px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .navigation-links-down>div:blogas {
+        display: none;
+      }
+
+      .navigation-links>div:blogas {
+        display: none;
+      }
+
+      .header {
+        display: flex;
+      }
+
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px) {
+        body {
+          background-color: green;
+        }
+      }
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+        body {
+          background-color: antiquewhite !important;
+        }
+      }
+
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {}
+
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1200px) {}
+
+      @media only screen and (max-width: 480px) {
+        .logo {
+          background: url(images/logo_mobile.png);
+          width: 440px;
+        }
+      }
+  </style>
+</head>
+l.
+
+<body>
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Faq.html">Faq</a>
+  </div>
+  <div class="container">
+    <div class="navigation">
+      <div class="test"></div>
+      <div class="navigation-links">
+        <a href="#blogas-1">Blogas 1</a>
+        <a href="#blogas-2">Blogas 2</a>
+        <a href="#blogas-3">Blogas 3</a>
+        <a href="#blogas-4">Blogas 4</a>
+      </div>
+    </div>
+    <div class="content">
+      <div id="blogas-1">
+
+      </div>
+      <div id="blogas-2"></div>
+      <div id="blogas-3"></div>
+      <div id="blogas-4"></div>
+    </div>
+    <div class="container2">
+      <div class="navi-right">
+        <div class="test2"></div>
+        <div class="navigation-links-down">
+          <a href="#blogas-1">Down 1</a>
+          <a href="#blogas-2">Down 2</a>
+          <a href="#blogas-3">Down 3</a>
+          <a href="#blogas-4">Down 4</a>
+        </div>
+      </div>
+      <script>
+        const blogas1 = document.getElementById('blogas-1');
+        // Keisti 100 norint gauti kitoki kieki
+        for (let i = 0; i < 100; i += 1) {
+          const element = document.createElement('div');
+          element.className = 'img-container';
+          element.style.backgroundColor = `#${((1 << 24) * Math.random() | 0).toString(16)}`;
+          element.innerText = `Tai yra ${i}`;
+          // element.innerText = 'Galima ir taip';
+          blogas1.appendChild(element);
+        }
+      </script>
+</body>
+
+</html>
