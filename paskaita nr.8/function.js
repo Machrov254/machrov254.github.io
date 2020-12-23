@@ -9,6 +9,11 @@ let arrayOfColors = [
     'black',
 ]
 
+let changeHeight = [
+    '100px',
+    '200px',
+]
+
 let index = 0;
 
 /**
@@ -17,18 +22,28 @@ let index = 0;
 
 
 function changeColor() {
-    let randomLeft = Math.random() * 100;
+    let randomColor = Math.random() * 100;
     let element = document
         .getElementById('container');
     element.style.backgroundColor = arrayOfColors[index];
-    element.style.left = randomLeft + '%';
+    element.style.color = randomColor + '%';
     console.log(arrayOfColors[index], index);
+}
+
+function changeHeight() {
+    let randomHeight = Math.random() * 100;
+    let element = document
+        .getElementById('container');
+    element.style.height = changeHeight[index];
+    element.style.height = randomHeight + '%';
+    console.log(changeHeight[index], index);
     // index += 1;
-    index = (index + 1) % arrayOfColors.length;
 }
 
 function onLoad() {
-    document.getElementById('buttonChangeColor').onclick = changeColor;
+    document.getElementById('buttonChangeColorRed').onclick = changeColor;
+    document.getElementById('buttonChangeColorBlue').onclick = changeHeight;
 }
+
 
 window.onload = onLoad;
