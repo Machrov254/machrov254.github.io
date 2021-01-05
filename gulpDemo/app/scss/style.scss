@@ -1,0 +1,50 @@
+html {
+    background-color: rgb(204, 0, 0)(184, 63, 63);
+}
+
+//.container div span:hover {
+//    background-color: red;
+//}
+
+//.container > span {
+//width: 100%;
+//text-align: center;
+//display: block;
+//}
+
+.over-grey {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    background-color:grey;
+    opacity:0.4;
+}
+
+.container {
+    div {
+        span {
+            display: block;
+            height: 200px;
+            background-color: purple;
+            &:hover {
+              background-color: red;
+            }
+            &:after {
+@extend .over-grey;
+content:" " ;
+            }
+        }
+    }
+    & > span {
+        width: 100%;
+        &:after {
+            @extend .over-grey;
+            background-color: aqua ;
+            content:" " ;
+        }
+        text-align: center;
+        display: block;
+    }
+}
