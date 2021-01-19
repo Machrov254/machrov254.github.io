@@ -8,7 +8,9 @@ html, body {
     height: 100%;
     max-height: 1365px;
     background-size: cover;
-    background: url('../img/cover.jpg') center center;
+    background-image: url('../img/cover.jpg');
+    background-position-x: center;
+    background-position-y: center;
 }
 
 .navigation {
@@ -29,23 +31,38 @@ html, body {
     margin-left: 200px;
 }
 
-.content {
-    width: 100%;
-    height: 100%;
-    margin-left: 200px;
+@media (min-width: 576px) {
+    .content {
+        margin-left: 200px;
+    }
+}
+
+.nav-link {
+    color: rgb(248, 194, 77);
 }
 
 .nav-link:hover {
- color: rgb(248, 194, 77);
  transform: scale(1.1);
  background-color: rgba(255, 255, 255, 0.116);
 }
 
-div #rekvizitai {
+div#rekvizitai {
     height:200px;
 }
 
 .swiper-container {
-    width: 600px;
-    height: 600px;
+    height: 600px; 
+}
+
+.text-big {
+    font-size: 16px;
+}
+
+.text-indent {
+    text-indent: 30px;
+}
+
+.active {
+    font-weight: bold !important;
+    font-size: 32px !important;
 }

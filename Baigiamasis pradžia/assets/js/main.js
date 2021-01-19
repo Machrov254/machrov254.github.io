@@ -1,5 +1,5 @@
 var mySwiper = new Swiper('.swiper-container', {
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
     speed: 400,
     spaceBetween: 100,
