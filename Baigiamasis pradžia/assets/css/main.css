@@ -51,8 +51,8 @@ div#rekvizitai {
 }
 
 .swiper-container {
-    height: 800px;
-    width: 600px; 
+    height: 1000px;
+    width: 700px; 
 }
 
 .text-big {
@@ -66,4 +66,10 @@ div#rekvizitai {
 .active {
     font-weight: bold !important;
     font-size: 32px !important;
+}
+
+.img-fluid {
+    object-fit: contain;
+    height: 900px;
+    width: 700px;
 }
