@@ -17,3 +17,14 @@ var mySwiper = new Swiper('.swiper-container', {
         el: '.swiper-scrollbar',
     },
 });
+
+$(window).on('scroll', function () {
+    var scrollHeight = $(this).scrollTop();
+    var slideHeight = $('#big-logo').height() / 2;
+
+    if (scrollHeight >= slideHeight) {
+        $('#small-logo').removeClass('invisible');
+    } else {
+        $('#small-logo').addClass('invisible');
+    }
+}); 
